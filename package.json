@@ -1,0 +1,20 @@
+{
+  "name": "medicine-chatbot",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "install:all": "npm --prefix client install && npm --prefix server install --legacy-peer-deps",
+    "dev": "npm-run-all --parallel dev:server dev:client",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "build": "npm --prefix client run build",
+    "start": "npm --prefix server run start"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
+

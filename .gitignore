@@ -1,0 +1,29 @@
+# ENV files
+.env
+*/.env
+
+# Node modules
+node_modules/
+*/node_modules/
+
+# Build outputs
+dist/
+build/
+client/dist/
+server/dist/
+client/build/
+server/build/
+
+# OS
+.DS_Store
+
+# Logs
+*.log
+
+# Large unwanted files
+*.psd
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
